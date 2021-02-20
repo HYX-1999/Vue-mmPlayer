@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/recommended', '@vue/standard'],
+  extends: ['plugin:vue/recommended'],
   rules: {
     'vue/max-attributes-per-line': [
       2,
