@@ -1,11 +1,11 @@
 import axios from 'axios'
 import Vue from 'vue'
 
-const request = axios.create({
+const instance = axios.create({
   baseURL: process.env.VUE_APP_BASE_API_URL
 })
 
-request.interceptors.response.use(
+instance.interceptors.response.use(
   response => {
     window.response = response
 
@@ -20,4 +20,4 @@ request.interceptors.response.use(
   }
 )
 
-export default request
+export default instance
